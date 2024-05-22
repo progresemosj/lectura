@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.active {
+  color: #fff; /* Cambia el color del texto a blanco cuando el enlace está seleccionado */
+   /* Reduce ligeramente la opacidad para que el color se vea más claro */
+}
+
+
+
+/* footer{
+  padding-top: 25px;
+  padding-bottom: 50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+} */

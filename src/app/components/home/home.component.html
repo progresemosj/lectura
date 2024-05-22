@@ -1,0 +1,52 @@
+<!--
+<div class="min-h-screen flex -mt-20 items-center justify-center">
+  <img  src="../../../assets/images/work.jpg" alt="">
+</div> -->
+
+
+<div class="">
+      <app-carousel></app-carousel>
+</div>
+
+
+
+<div class="flex items-center">
+  <div class="w-1/2 p-4">
+    <div class="text-center">
+      <p class="text-3xl font-semibold">Bienvenidos a Nuestro Mundo de Aventuras</p>
+      <p class="text-xl">Un lugar donde cada clic te lleva a una nueva historia, un nuevo juego y una nueva forma de aprender.</p>
+    </div>
+  </div>
+
+  <div class="w-1/2 p-4">
+    <img src="../../../assets/images/ninios.jpg" alt="ninios" class="max-w-full h-auto">
+  </div>
+
+</div>
+
+
+<hr class="mx-4 my-6 border-t border-gray-300">
+
+<section class="flex flex-col ">
+  <div class="flex-grow overflow-y-auto">
+
+    <div class="container px-8 py-8 flex  justify-center items-center">
+      <div class="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-4 gap-8 sm:gap-8 lg:gap-36">
+        <div *ngFor="let item of items" class="text-center   w-36 h-36  ml-4 mr-4">
+          <a [routerLink]="item.link" class="block hover:opacity-75">
+            <img [src]="item.image" alt="image" class=" w-24 h-24 md:w-32 md:h-32 mx-auto">
+            <span  class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- <div class="h-40"></div> -->
+</section>
+
+
+<!-- <div class=" bg-gray-200 rounded-lg shadow-md" >
+  <p class="text-3xl font-bold">Contador de Visitas</p>
+  <p class="text-6xl">{{1}}</p>
+</div> -->
