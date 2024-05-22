@@ -21,25 +21,26 @@ export class CarouselComponent {
   images =[
     {
       image:
-      '../../../as../../../assets/images/canciones.jpg',
+      'sets/images/canciones.jpg',
+      // '../../../../../../assets/images/canciones.jpg',
       imageAlt:'canciones',
 
     },
     {
       image:
-      '../../../as../../../assets/images/cuentos.jpg',
+      'assets/images/cuentos.jpg',
       imageAlt:'cuentos',
 
     },
     {
       image:
-      '../../../as../../../assets/images/fabulas.jpg',
+      'assets/images/fabulas.jpg',
       imageAlt:'fabulas',
 
     },
     {
       image:
-      '../../../as../../../assets/images/juegos.jpg',
+      'assets/images/juegos.jpg',
       imageAlt:'juegos',
 
     },
