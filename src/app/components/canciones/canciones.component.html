@@ -1,3 +1,23 @@
+
+<div class="flex items-center">
+  <div class="w-1/2 p-4">
+    <div class="text-center">
+
+      <p *ngFor="let word of audioText; let i = index" [class.font-bold]="i === currentWordIndex">
+        {{word.word}}
+      </p>
+    </div>
+  </div>
+
+  <div class="w-1/2 p-4">
+    <audio #audioPlayer controls (timeupdate)="highlightWord(audioPlayer)">
+    <source src="../../../assets/audio/gallinaturuleca.mp3" type="audio/mp3">
+    </audio>
+    <p>audio</p>
+  </div>
+</div>
+
+
 <div class="mx-4">
   <div class="container px-8 py-8 flex  justify-center items-center">
   <div  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
