@@ -21,7 +21,7 @@ export class CarouselComponent {
   images =[
     {
       image:
-      'sets/images/canciones.jpg',
+      'assets/images/canciones.jpg',
       // '../../../../../../assets/images/canciones.jpg',
       imageAlt:'canciones',
 
