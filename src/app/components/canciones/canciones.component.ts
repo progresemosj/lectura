@@ -10,7 +10,7 @@ export class CancionesComponent {
   @ViewChild('audioPlayer') audioPlayer: any;
   audioText: { word: string, startTime: number, endTime: number }[] = [
     { word: 'Yo conozco', startTime: 16, endTime: 17 },
-    { word: 'conozco', startTime: 0.16, endTime: 2.5 },
+    { word: 'una vecina', startTime: 17, endTime: 18 },
     // Agrega más palabras con sus tiempos de inicio y finalización
   ];
   currentWordIndex: number = -1;
