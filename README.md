@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## actualizar github y githubpages
+  # git add .
+Este comando agrega todos los archivos modificados y nuevos en el directorio de trabajo 
+
+  # git commit -m "mensaje descrptivo de la accion"
+
+El commit guarda los cambios que están en el área de preparación (que previamente agregaste con git add) en el repositorio de Git junto con el mensaje de confirmación proporcionado.
+
+# Compilar tu aplicación Angular para producción
+  # ng build --configuration=production
+
+# git push
+
+
+# Desplegar la aplicación en GitHub Pages:
+
+Una vez que hayas compilado tu aplicación en modo de producción, despliégala en GitHub Pages.
+  # npx angular-cli-ghpages --dir=dist/lectura

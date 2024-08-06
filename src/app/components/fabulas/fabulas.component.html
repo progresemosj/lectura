@@ -1,12 +1,39 @@
-<div class="mx-4">
-  <div class="container px-8 py-8 flex  justify-center items-center">
-  <div  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
-    <div *ngFor="let item of items"  class="text-center   w-36 h-36  ml-4 mr-4">
-      <a  [routerLink]="item.link" class="block hover:opacity-75">
-        <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
-        <span  class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
-      </a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <main class="contenedor">
+    <h1>FABULAS</h1>
+    <div class="container text-center mb-4 flex justify-center items-center">
+      <input [(ngModel)]="searchTerm" (ngModelChange)="onSearch()" type="text" placeholder="Buscar fábula..."
+        class="search-input">
+      <button (click)="onSearch()" class="search-button">Buscar</button>
+    </div>
+    <div class="grid">
+      <div class="fabula" *ngFor="let item of itemsf">
+        <a class="cuadrito" [routerLink]="item.link" class="block hover:opacity-75">
+          <p class="titulofabula">{{item.text}}</p>
+          <img class="fabulaimg" [src]="item.image" alt="image">
+        </a>
+      </div>
+    </div>
+  </main>
+  <div class="botones">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
+      <div *ngFor="let item of items" class="text-center   w-36 h-36  ml-4 mr-4">
+        <a [routerLink]="item.link" class="block hover:opacity-75">
+          <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
+          <span class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
+        </a>
+      </div>
     </div>
   </div>
-</div>
-</div>
+</body>
+
+</html>

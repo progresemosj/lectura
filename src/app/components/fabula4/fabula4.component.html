@@ -1,0 +1,42 @@
+<div class="relative">
+    <!-- contenedor de la imagen de fondo -->
+    <div class=" inset-0 bg-cover " style="background-image: url('assets/images/fondofabula.jpeg'); background-color: rgba(255, 255, 255, 0.9); z-index: -1;">
+      <p class="text-5xl font-semibold text-center"><br>La lobo disfrazado</p>
+      <div class="flex">
+        <div class="container">
+            <div class="container fabula">
+              <p class="texto">Erase una vez un lobo muy oportunista que encontró una piel de oveja abandonada en el campo:
+                “Con esta piel podré disfrazarme de oveja, caminar entre ellas y hacerlas presa fácil. ¡Qué gran banquete me voy a dar!”, pensó el malvado.
+                De esta manera, se colocó la piel sobre el lomo y acto seguido se dirigió hacia el rebaño.
+                Ninguna de las ovejas notó su presencia. Todas seguían pastando y disfrutando del día. ¡Su plan funcionaba a la perfección!
+                El pastor tampoco advirtió su presencia y llegado el atardecer llevó el rebaño al corral. El lobo se lamía y relamía pensando en su fabulosa cena.
+                Pero antes de cerrar la puerta, el pastor, sin saber de quién se trataba, apartó al lobo del rebaño para cortarle la lana. ¡Menuda sorpresa se llevó cuando con el primer halón, la piel de oveja cayó al suelo y dejó al lobo al descubierto!
+                Furioso, el pastor echó al lobo a palos y este nunca volvió a acercarse a sus ovejas.
+              </p>
+              <p class="moraleja">Moraleja:Los engaños nunca te harán exitoso.</p>
+            </div>
+          
+        </div>
+  
+        <div class="w-1/2 p-4 pl-20 mt-28">
+           <div class="absolute">
+            <img src="assets/images/fabula4.jpg">
+            <a href="/fabulas">
+                <img src="assets/images/btnregresar.png" >
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="botones">
+        <div  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
+          <div *ngFor="let item of items"  class="text-center   w-36 h-36  ml-4 mr-4">
+            <a  [routerLink]="item.link" class="block hover:opacity-75">
+              <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
+              <span  class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

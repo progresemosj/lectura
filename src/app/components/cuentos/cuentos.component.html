@@ -1,12 +1,242 @@
-<div class="mx-4">
-  <div class="container px-8 py-8 flex  justify-center items-center">
-  <div  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
-    <div *ngFor="let item of items"  class="text-center   w-36 h-36  ml-4 mr-4">
-      <a  [routerLink]="item.link" class="block hover:opacity-75">
-        <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
-        <span  class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
-      </a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .contenedor {
+      border-bottom: 5px solid brown;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    body {
+      background-image: url(assets/images/fondobn.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    h1 {
+      color: rgb(192, 190, 99);
+      ;
+      font-size: 70px;
+      border-bottom: 5px solid rgb(192, 190, 99);
+      ;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .grid {
+      padding: 25px 0 25px 0;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin: 20px 0;
+    }
+
+    .cuento {
+      margin-bottom: 8px;
+    }
+
+    @media(min-width:768px) {
+      .grid {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+      }
+    }
+
+    .titulocuento {
+      font-size: 20px;
+      color: rgba(211, 211, 211, 0.952);
+      margin-top: 10px;
+      background-color: rgba(0, 0, 0, 0.185);
+      font-weight: bold;
+    }
+
+    .cuadrito {
+      align-items: center;
+      text-align: center;
+    }
+
+    .cuentoimg {
+      border: 3px solid rgb(192, 190, 99);
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="contenedor">
+    <h1>CUENTOS FAMOSOS</h1>
+    <div class="grid">
+
+      <div class="cuento">
+        <!--para finalizar le das el router link para poder referenciar-->
+        <a routerLinkActive="active" [routerLink]="['/cuentos/primerCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/treschanchitos.jpeg" alt="losTresChanchitos">
+          <p class="titulocuento">TRES CHANCHITOS</p>
+        </a>
+      </div>
+
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/segundoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/ricitosdeoro.jpeg" alt="losTresChanchitos">
+          <p class="titulocuento">RICITOS DE ORO</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a routerLink="active" [routerLink]="['/cuentos/tercerCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/pinocho.jpeg" alt="losTresChanchitos">
+          <p class="titulocuento">PINOCHO</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/cuartoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/cenicienta.jpeg" alt="losTresChanchitos">
+          <p class="titulocuento">CENICIENTA</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/quintoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/caperusita.jpeg" alt="losTresChanchitos">
+          <p class="titulocuento">CAPERUSITA ROJAS</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/sextoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/elpatitofeo.jpeg" alt="losTresChanchitos">
+          <p class="titulocuento">EL PATITO FEO</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/septimoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/aladino.jpeg" alt="losTresChanchitos">
+          <p class="titulocuento">ALADINO Y LA LAMPARA</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/octavoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/bellaybestia.jpeg" alt="losTresChanchitos">
+          <p class="titulocuento">LA BELLA Y LA BESTIA</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/novenoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/gatoconbotas.jpeg" alt="losTresChanchitos">
+          <p class="titulocuento">EL GATO CON BOTAS</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/decimoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/belladurmiente.jpeg" alt="losTresChanchitos">
+          <p class="titulocuento">LA BELLA DURMIENTE</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/onceavoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/ganzo.jpeg" alt="losTresChanchitos">
+          <p class="titulocuento">EL GANZO DE ORO</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/doceavoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/hyg.jpeg" alt="losTresChanchitos">
+          <p class="titulocuento">HANSEL Y GRETEL</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <!---------------------------PARTE VICTOR------------------------------>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/treseavoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/frozen.jpg" alt="Frozen">
+          <p class="titulocuento">FROZEN</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/catorceavoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/blancanieves.jpg" alt="blancanieves">
+          <p class="titulocuento">BLANCANIEVES</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/quinceavoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/sapo.jpg" alt="elPrincipeRana">
+          <p class="titulocuento">EL PRINICPE RANA</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/dieciseisavoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/rapunzel.jpg" alt="Rapunzel">
+          <p class="titulocuento">RAPUNZEL</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/diecisieteavoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/enano.jpg" alt="elenanoSaltarin">
+          <p class="titulocuento">EL ENANO SALTARIN</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/dieciochoavoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/midas.jpg" alt="reymidas">
+          <p class="titulocuento">LA BELLA DURMIENTE</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/diecinueveavoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/tortuga.jpg" alt="latortugaylaliebre">
+          <p class="titulocuento">LA TORTUGA Y LA LIBRE</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+      <div class="cuento">
+        <a class="cuadrito" [routerLink]="['/cuentos/veinteavoCuento']" class="mx-2 cursor-pointer">
+          <img class="cuentoimg" src="assets/images/camello.jpg" alt="elcamelloysujoraba">
+          <p class="titulocuento">COMO LE SALIO LA JORABA AL CAMELLO</p>
+        </a>
+      </div>
+      <!--------------------------------------------------------------------->
+    </div>
+  </main>
+
+
+
+
+
+  <div class="mx-4">
+    <div class="container px-8 py-8 flex  justify-center items-center">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
+        <div *ngFor="let item of items" class="text-center   w-36 h-36  ml-4 mr-4">
+          <a [routerLink]="item.link" class="block hover:opacity-75">
+            <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
+            <span class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>

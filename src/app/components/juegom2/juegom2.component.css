@@ -1,0 +1,76 @@
+/* Estilos para el cuerpo de la página */
+body {
+  background-color: #f7fafc; /* Color de fondo opcional */
+}
+
+/* Estilos para el contenedor principal */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilos para el título */
+.text-3xl {
+  font-size: 1.875rem; /* Tamaño de fuente ajustado para el título */
+}
+
+/* Estilos para la descripción del juego */
+.text-lg {
+  font-size: 1.125rem; /* Tamaño de fuente ajustado para el texto */
+  line-height: 1.6; /* Ajuste del interlineado para mejorar la legibilidad */
+}
+
+.text-gray-600 {
+  line-height: 1.6; /* Ajuste del interlineado para mejorar la legibilidad */
+}
+
+/* Estilos para el botón "Ir al Juego" */
+/* Estilos para el botón "Ir al Juego" */
+.bg-green-500 {
+  background-color: #10b981; /* Color de fondo del botón */
+  border-color: #10b981; /* Color del borde del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 1rem 2rem; /* Ajuste del padding del botón */
+  font-size: 1.5rem; /* Tamaño de fuente del botón */
+  border-radius: 0.5rem; /* Borde redondeado del botón */
+}
+
+.bg-green-500:hover {
+  background-color: #059669; /* Cambio de color de fondo al hacer hover */
+  border-color: #059669; /* Cambio de color del borde al hacer hover */
+}
+
+/* Estilos adicionales para achicar los botones */
+.text-center a {
+  display: inline-block;
+  margin: 0 0.5rem; /* Ajuste del margen horizontal */
+  max-width: 150px; /* Ancho máximo de los botones */
+}
+
+/* Estilos para los textos dentro de los botones */
+.text-center span {
+  font-size: 0.875rem; /* Tamaño de fuente para el texto dentro de los botones */
+}
+
+
+/* Estilos para los botones */
+.text-center {
+  text-align: center; /* Alineación del texto centrada */
+  margin-bottom: 1rem; /* Espacio inferior entre los botones */
+}
+
+.text-sm {
+  font-size: 0.875rem; /* Tamaño de fuente ajustado para los textos pequeños de los botones */
+}
+
+/* Estilos para los botones en estado de hover */
+.hover\:opacity-75:hover {
+  opacity: 0.75; /* Cambio de opacidad al hacer hover */
+}
+
+/* Estilos adicionales para achicar los botones */
+.text-center a {
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente los botones */
+  max-width: 150px; /* Ancho máximo de los botones */
+}

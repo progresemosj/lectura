@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class CuentosComponent {
   items = [
 
-    {image: 'assets/images/song.svg', text:"Canciones", link:'/canciones'},
+    { image: 'assets/images/song.svg', text: "Canciones", link: '/canciones/principal' },
     // {image: '../../../assets/images/cuento.svg', text:"Cuentos", link:'/cuentos'},
-    {image: 'assets/images/fabula.svg', text:"Fábulas", link:'/fabulas'},
-    {image: 'assets/images/juegos.svg', text:"Juegos", link:'/juegos'},
+    { image: 'assets/images/fabula.svg', text: "Fábulas", link: '/fabulas' },
+    { image: 'assets/images/juegos.svg', text: "Juegos", link: '/juegos' },
   ];
 }

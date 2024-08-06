@@ -1,0 +1,41 @@
+<div class="relative">
+    <!-- contenedor de la imagen de fondo -->
+    <div class=" inset-0 bg-cover " style="background-image: url('assets/images/fondofabula.jpeg'); background-color: rgba(255, 255, 255, 0.9); z-index: -1;">
+      <p class="text-5xl font-semibold text-center"><br>La zorra y las uvas</p>
+      <div class="flex">
+        <div class="container">
+            <div class="container fabula">
+              <p class="texto">En un día muy caluroso, una zorra sedienta se topó con un racimo de uvas grandes y jugosas que colgaban en lo alto de una parra. 
+                La zorra se paró de puntillas y estiró sus brazos intentando alcanzar las uvas, pero estas se encontraban muy lejos de su alcance.
+                Sin querer darse por vencida, la zorra tomó impulso y saltó con todas sus fuerzas una y otra vez, pero las uvas seguían muy lejos de su alcance.
+                Esta vez, la zorra se sentó a mirar las uvas con desagrado.
+                —Qué ilusa he sido —pensó—. Me he esforzado en alcanzar unas uvas verdes que no saben bien.
+                Y se marchó muy, pero muy enojada.
+              </p>
+              <p class="moraleja">Moraleja: Cuando algo es muy difícil de conseguir, lo mejor es ser honestos con nuestros sentimientos.</p>
+            </div>
+          
+        </div>
+  
+        <div class="w-1/2 p-4 pl-20 mt-28">
+           <div class="absolute">
+            <img src="assets/images/fabula6.jpg">
+            <a href="/fabulas">
+                <img src="assets/images/btnregresar.png" >
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="botones">
+        <div  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
+          <div *ngFor="let item of items"  class="text-center   w-36 h-36  ml-4 mr-4">
+            <a  [routerLink]="item.link" class="block hover:opacity-75">
+              <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
+              <span  class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

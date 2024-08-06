@@ -4,8 +4,9 @@
 
 
 .active {
-  color: #fff; /* Cambia el color del texto a blanco cuando el enlace está seleccionado */
-   /* Reduce ligeramente la opacidad para que el color se vea más claro */
+  color: #fff;
+  /* Cambia el color del texto a blanco cuando el enlace está seleccionado */
+  /* Reduce ligeramente la opacidad para que el color se vea más claro */
 }
 
 
@@ -21,3 +22,25 @@
   text-align: center;
 
 } */
+
+
+.custom-button {
+  background-color: #ff6b6b;
+  /* Cambiar a un color rojo claro */
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  /* Aumentar el tamaño del botón */
+  border-radius: 9999px;
+  /* Borde completamente redondeado */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Transiciones para suavizar el efecto hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+  position: fixed;
+  /* Posicionar el botón de manera fija */
+  right: 20px;
+  /* Ubicar al lado derecho */
+  bottom: 20px;
+  /* Ubicar al fondo */
+}

@@ -1,0 +1,46 @@
+<div class="relative">
+    <!-- contenedor de la imagen de fondo -->
+    <div class=" inset-0 bg-cover " style="background-image: url('assets/images/fondofabula.jpeg'); background-color: rgba(255, 255, 255, 0.9); z-index: -1;">
+      <p class="text-5xl font-semibold text-center"><br>El zorro y el armiño</p>
+      <div class="flex">
+        <div class="container">
+            <div class="container fabula">
+              <p class="texto">Un zorro comía plácidamente cuando un elegante armiño pasó junto a él.
+
+                — ¿Te apetece un poco de mi comida? —preguntó el zorro.
+                
+                — No, gracias —respondió el armiño con tono airoso—, yo ya comí.
+                
+                —¡Ja, ja, ja! —rio el zorro—. Ustedes los armiños son los animales más engreídos del mundo. Prefieren dejar de comer antes que mancharse el pelaje.
+                
+                En aquel momento llegaron unos cazadores. El zorro, como un rayo, se refugió bajo tierra, y el armiño, no menos rápido que el zorro, corrió hacia su madriguera.
+                
+                Pero había llovido y la madriguera estaba inundada; el armiño, para no mancharse con el fango, titubeó y se detuvo. Los cazadores lo atraparon al instante.
+              </p>
+              <p class="moraleja">Moraleja: No dejes que la vanidad te aleje de lo que es en realidad importante.</p>
+            </div>
+          
+        </div>
+  
+        <div class="w-1/2 p-4 pl-20 mt-28">
+           <div class="absolute">
+            <img src="assets/images/fabula8.png">
+            <a href="/fabulas">
+                <img src="assets/images/btnregresar.png" >
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="botones">
+        <div  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
+          <div *ngFor="let item of items"  class="text-center   w-36 h-36  ml-4 mr-4">
+            <a  [routerLink]="item.link" class="block hover:opacity-75">
+              <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
+              <span  class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

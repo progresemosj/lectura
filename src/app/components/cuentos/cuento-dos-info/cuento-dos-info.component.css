@@ -1,0 +1,28 @@
+body{
+    background-image: url(../../../../assets/images/fondocuentos.jpg);
+}
+.contenedor{
+    width: min(90%, 800px);
+    margin: 0 auto;
+}
+.cuento{
+    padding: 70px 70px;
+    background-color: rgba(201, 200, 200, 0.582);
+}
+.encabezado-cuento{
+    text-align: center;
+}
+.encabezado-cuento h1{
+    color:#248847;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.imagen-cuento img{
+    margin: 20px auto;
+    width: 100%;
+}
+.parrafo-cuento{
+    line-height: 1.4;
+    padding-bottom: 15px;
+}

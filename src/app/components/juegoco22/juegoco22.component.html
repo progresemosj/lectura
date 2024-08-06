@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programamos el camino</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="juegoco22.component.css"> <!-- Enlace al archivo CSS personalizado -->
+</head>
+<body>
+
+<div class="mx-auto max-w-screen-lg px-4">
+  <!-- Contenedor principal -->
+  <div class="container px-8 py-8 md:flex md:items-center md:flex-col">
+    <!-- Título de bienvenida -->
+    <h1 class="text-3xl font-bold mb-4 md:text-center">
+      Programamos el camino
+    </h1>
+
+    <!-- Imagen -->
+    <div class="flex justify-center mb-4">
+      <img src="assets/images/programar2.png" alt="Contemos" class="max-w-xs md:max-w-full">
+    </div>
+
+    <!-- Descripción y botón -->
+    <div class="md:flex md:flex-col md:justify-center md:flex-1 md:text-center">
+      <!-- Descripción del juego -->
+      <p class="text-lg text-gray-600 mb-6">
+        Un juego introductorio a la programación donde los niños deben elaborar instrucciones para guiar a un personaje hasta su destino. A través de dos niveles de dificultad, los niños aprenderán conceptos básicos de programación, como secuencias y lógica, mientras resuelven puzzles para alcanzar el parque. Esta actividad fomenta el pensamiento lógico y la resolución de problemas de manera divertida y educativa.
+      </p>
+
+      <!-- Enlace "Ir al Juego" -->
+      <div>
+        <a href="https://www.ecasals.net/es/uploads/resources/s210/1081310/index.html" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-block mb-4 md:mb-0 md:mr-4">
+          JUGAR
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor de botones -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 mt-8">
+    <div *ngFor="let item of otherItems" class="text-center">
+      <a [routerLink]="item.link" class="block hover:opacity-75">
+        <img [src]="item.image" alt="image" class="max-w-full mx-auto">
+        <span class="mt-2 text-base font-medium text-gray-700 block">{{ item.text }}</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

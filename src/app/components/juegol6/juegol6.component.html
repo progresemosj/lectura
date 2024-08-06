@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocales Perdidas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="juegol6.component.css"> <!-- Enlace al archivo CSS personalizado -->
+</head>
+<body>
+
+<div class="mx-auto max-w-screen-lg px-4">
+  <!-- Contenedor principal -->
+  <div class="container px-8 py-8 md:flex md:items-center md:flex-col">
+    <!-- Título de bienvenida -->
+    <h1 class="text-3xl font-bold mb-4 md:text-center">
+      Vocales Perdidas
+    </h1>
+
+    <!-- Imagen -->
+    <div class="flex justify-center mb-4">
+      <img src="assets/images/vocales1.png" alt="Contemos" class="max-w-xs md:max-w-full">
+    </div>
+
+    <!-- Descripción y botón -->
+    <div class="md:flex md:flex-col md:justify-center md:flex-1 md:text-center">
+      <!-- Descripción del juego -->
+      <p class="text-lg text-gray-600 mb-6">
+        "Vocales Perdidas" desafía a los niños a encontrar vocales faltantes en palabras simples, combinando aprendizaje y diversión para enseñarles las bases de la lectura y la escritura.
+      </p>
+
+      <!-- Enlace "Ir al Juego" -->
+      <div>
+        <a href="https://www.juegosarcoiris.com/espanol/html5/juegos/letras/fletras/index.html" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-block mb-4 md:mb-0 md:mr-4">
+          JUGAR
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor de botones -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 mt-8">
+    <div *ngFor="let item of otherItems" class="text-center">
+      <a [routerLink]="item.link" class="block hover:opacity-75">
+        <img [src]="item.image" alt="image" class="max-w-full mx-auto">
+        <span class="mt-2 text-base font-medium text-gray-700 block">{{ item.text }}</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<div class="flex">
+
+  <div class="w-1/5 bg-gray-100">
+    <ul class="">
+      <li class=" mx-2 cursor-pointer" *ngFor="let cancion of canciones"
+       (click)="cargarCanciones(cancion.id)"  [class.seleccionado]="cancion.seleccionado">
+        <div class=" py-2 flex items-center ">
+          <img class=" w-12 h-12 rounded-full mr-2" [src]="cancion.imagen" alt="">
+          <div  class="flex items-center ">
+            <p class="text-gray-400 font-semibold">{{ cancion.nombre }}</p>
+          </div>
+
+          <div *ngIf="cancion.seleccionado" class="ml-2 animate-pulse">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+
+        </div>
+        <hr class="">
+
+      </li>
+
+
+    </ul>
+  </div>
+
+  <div class="w-4/5 bg-green-200">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
