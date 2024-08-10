@@ -11,6 +11,33 @@
 <body>
   <div class="header">
     <div class="title-container">
+      <div class="background"
+        style="background-image: url('assets/images/fondo4.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+        <div class="header">
+          <p class="text-5xl font-semibold underline">JUEGOS DE MATEMÁTICA</p>
+        </div>
+
+        <div class="container">
+          <div class="fabula" *ngFor="let item of itemsf">
+            <a [routerLink]="item.link" class="block hover:opacity-75">
+              <div class="title">{{item.text}}</div>
+              <img [src]="item.image" alt="image">
+            </a>
+          </div>
+        </div>
+
+        <div class="botones">
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
+            <div *ngFor="let item of items" class="text-center w-36 h-36 ml-4 mr-4">
+              <a [routerLink]="item.link" class="block hover:opacity-75">
+                <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
+                <span class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <h1 class="text-5xl">JUEGOS DE CIENCIAS</h1>
     </div>
   </div>

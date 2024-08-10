@@ -1,6 +1,14 @@
 /* Estilos para el cuerpo de la página */
 body {
-  background-color: #f7fafc; /* Color de fondo opcional */
+
+  background-size: cover;
+  /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
+  background-attachment: fixed;
+  /* Fija la imagen de fondo para que no se mueva al hacer scroll */
+  background-position: center;
+  /* Centra la imagen de fondo */
 }
 
 /* Estilos para el contenedor principal */
@@ -11,66 +19,127 @@ body {
 
 /* Estilos para el título */
 .text-3xl {
-  font-size: 1.875rem; /* Tamaño de fuente ajustado para el título */
+  font-size: 1.875rem;
+  /* Tamaño de fuente ajustado para el título */
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  /* Color del texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Sombra del texto */
 }
 
 /* Estilos para la descripción del juego */
 .text-lg {
-  font-size: 1.125rem; /* Tamaño de fuente ajustado para el texto */
-  line-height: 1.6; /* Ajuste del interlineado para mejorar la legibilidad */
+  font-size: 1.125rem;
+  /* Tamaño de fuente ajustado para el texto */
+  line-height: 1.6;
+  /* Ajuste del interlineado para mejorar la legibilidad */
 }
 
 .text-gray-600 {
-  line-height: 1.6; /* Ajuste del interlineado para mejorar la legibilidad */
+  line-height: 1.6;
+  /* Ajuste del interlineado para mejorar la legibilidad */
+  color: #4a5568;
+  /* Un color gris medio para el texto */
 }
 
-/* Estilos para el botón "Ir al Juego" */
-/* Estilos para el botón "Ir al Juego" */
+/* Estilos para el botón "JUGAR" */
 .bg-green-500 {
-  background-color: #10b981; /* Color de fondo del botón */
-  border-color: #10b981; /* Color del borde del botón */
-  color: #fff; /* Color del texto del botón */
-  padding: 1rem 2rem; /* Ajuste del padding del botón */
-  font-size: 1.5rem; /* Tamaño de fuente del botón */
-  border-radius: 0.5rem; /* Borde redondeado del botón */
+  background-color: #10b981;
+  /* Color de fondo del botón */
+  border-color: #10b981;
+  /* Color del borde del botón */
+  color: #fff;
+  /* Color del texto del botón */
+  padding: 1rem 2rem;
+  /* Ajuste del padding del botón */
+  font-size: 1.5rem;
+  /* Tamaño de fuente del botón */
+  border-radius: 0.5rem;
+  /* Borde redondeado del botón */
 }
 
 .bg-green-500:hover {
-  background-color: #059669; /* Cambio de color de fondo al hacer hover */
-  border-color: #059669; /* Cambio de color del borde al hacer hover */
+  background-color: #059669;
+  /* Cambio de color de fondo al hacer hover */
+  border-color: #059669;
+  /* Cambio de color del borde al hacer hover */
 }
 
-/* Estilos adicionales para achicar los botones */
+/* Estilos para los botones adicionales */
 .text-center a {
-  display: inline-block;
-  margin: 0 0.5rem; /* Ajuste del margen horizontal */
-  max-width: 150px; /* Ancho máximo de los botones */
+  display: block;
+  margin: 0 auto;
+  /* Centra horizontalmente los botones */
+  max-width: 150px;
+  /* Ancho máximo de los botones */
 }
 
-/* Estilos para los textos dentro de los botones */
+/* Estilos para el texto dentro de los botones */
 .text-center span {
-  font-size: 0.875rem; /* Tamaño de fuente para el texto dentro de los botones */
-}
-
-
-/* Estilos para los botones */
-.text-center {
-  text-align: center; /* Alineación del texto centrada */
-  margin-bottom: 1rem; /* Espacio inferior entre los botones */
-}
-
-.text-sm {
-  font-size: 0.875rem; /* Tamaño de fuente ajustado para los textos pequeños de los botones */
+  font-size: 0.875rem;
+  /* Tamaño de fuente para el texto dentro de los botones */
 }
 
 /* Estilos para los botones en estado de hover */
 .hover\:opacity-75:hover {
-  opacity: 0.75; /* Cambio de opacidad al hacer hover */
+  opacity: 0.75;
+  /* Cambio de opacidad al hacer hover */
 }
 
-/* Estilos adicionales para achicar los botones */
-.text-center a {
-  display: block;
-  margin: 0 auto; /* Centra horizontalmente los botones */
-  max-width: 150px; /* Ancho máximo de los botones */
+/* Estilos personalizados para el botón "Siguiente" */
+.custom-button {
+  background-color: #ff6b6b;
+  /* Color de fondo */
+  color: white;
+  /* Color del texto */
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  /* Aumenta el tamaño del botón */
+  border-radius: 9999px;
+  /* Borde completamente redondeado */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Transiciones suaves para hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+  position: fixed;
+  /* Posicionamiento fijo */
+  right: 20px;
+  /* Ubicación a la derecha */
+  bottom: 20px;
+  /* Ubicación en la parte inferior */
+}
+
+.custom-button:hover {
+  background-color: #e63946;
+  /* Color rojo más oscuro en hover */
+  transform: translateY(-2px);
+  /* Efecto de elevación */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  /* Sombra más pronunciada en hover */
+}
+
+/* Estilos para la sección de descripción */
+.description-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo oscuro translúcido */
+  border-radius: 0.75rem;
+  /* Bordes redondeados */
+  border: 2px solid #4CAF50;
+  /* Borde verde */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  /* Sombra */
+}
+
+/* Estilo para el título de la descripción */
+.text-green-700 {
+  color: #4CAF50;
+  /* Color verde vibrante */
+}
+
+/* Estilo para el texto de la descripción */
+.text-gray-100 {
+  color: #f5f5f5;
+  /* Color de texto claro */
 }

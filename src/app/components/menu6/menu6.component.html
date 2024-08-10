@@ -1,32 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="menu6.component.css">
-  <title>Juegos de Computacion</title>
-</head>
-
-<body>
+<div class="background"
+  style="background-image: url('assets/images/fondo4.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
   <div class="header">
-    <div class="title-container">
-      <h1 class="text-5xl">JUEGOS DE COMPUTO</h1>
-    </div>
+    <p class="text-5xl font-semibold underline">JUEGOS DE COMPUTACIÓN</p>
   </div>
 
   <div class="container">
     <div class="fabula" *ngFor="let item of itemsf">
       <a [routerLink]="item.link" class="block hover:opacity-75">
-        <div class="title">{{ item.text }}</div>
+        <div class="title">{{item.text}}</div>
         <img [src]="item.image" alt="image">
       </a>
     </div>
-  </div>
-
-  <div class="mx-16">
-    <button class="bg-green-500 text-white px-2 py-1 rounded-md" routerLink="/juegos">
-      < Atras </button>
   </div>
 
   <div class="botones">
@@ -34,11 +18,9 @@
       <div *ngFor="let item of items" class="text-center w-36 h-36 ml-4 mr-4">
         <a [routerLink]="item.link" class="block hover:opacity-75">
           <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
-          <span class="mt-4 text-lg font-medium text-gray-700 block">{{ item.text }}</span>
+          <span class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
         </a>
       </div>
     </div>
   </div>
-</body>
-
-</html>
+</div>

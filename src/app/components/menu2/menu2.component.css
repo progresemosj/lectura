@@ -1,21 +1,154 @@
 /* Estilos para el título principal */
 .text-5xl {
-  font-size: 3rem; /* Tamaño de fuente ajustado para el título principal */
-  font-weight: 600; /* Grosor de fuente para el título principal */
-  text-align: center; /* Alineación del texto centrada */
-  margin-bottom: 2rem; /* Espacio inferior para el título principal */
-  margin-top: 2rem; /* Espacio superior para el título principal */
+  font-size: 3rem;
+  /* Tamaño de fuente ajustado para el título principal */
+  font-weight: 600;
+  /* Grosor de fuente para el título principal */
+  text-align: center;
+  /* Alineación del texto centrada */
+  margin-bottom: 2rem;
+  /* Espacio inferior para el título principal */
+  margin-top: 2rem;
+  /* Espacio superior para el título principal */
 }
 
 /* Estilos para el cuerpo de la página */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5; /* Color de fondo general */
+  background-color: #f5f5f5;
+  /* Color de fondo general */
   margin: 0;
   padding: 0;
-  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-  background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
-  background-position: center center; /* Centra la imagen de fondo */
+  background-size: cover;
+  /* Ajusta la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat;
+  /* Evita la repetición de la imagen de fondo */
+  background-positio
+
+  /* Estilos para el cuerpo de la página */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  /* Estilos para el fondo */
+  .background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    padding-top: 20px;
+  }
+
+  /* Estilos para el encabezado */
+  .header {
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* Estilos para el contenedor principal */
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  /* Estilos para cada elemento de "Fábulas" */
+  .fabula {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.2s ease;
+  }
+
+  .fabula:hover {
+    transform: scale(1.05);
+  }
+
+  .fabula img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .fabula p {
+    margin: 0;
+    padding: 10px;
+  }
+
+  /* Estilos para el contenedor de botones */
+  .botones {
+    margin-top: 2rem;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Estilos para la fila de botones */
+  .button-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Estilos para cada botón en la fila */
+  .button-item {
+    margin: 10px;
+    text-align: center;
+  }
+
+  /* Estilos para los botones */
+  .icon {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 5px;
+    transition: transform 0.2s ease;
+  }
+
+  .icon:hover {
+    transform: rotate(360deg);
+  }
+
+  /* Estilos para el título principal */
+  .text-5xl {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Estilos para el texto de los botones */
+  .text-lg {
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+  }
+
+  /* Estilos para los íconos de los botones */
+  .text-gray-700 {
+    color: #4a5568;
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Estilos para el hover de opacidad */
+  .hover\:opacity-75:hover {
+    opacity: 0.75;
+  }
+
+  n: center center;
+  /* Centra la imagen de fondo */
 }
 
 /* Estilos para el encabezado */
@@ -32,7 +165,8 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Fondo semi-transparente */
 }
 
 /* Estilos para cada elemento de "Fábulas" */
@@ -42,7 +176,7 @@ body {
   border-radius: 10px;
   margin: 10px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
@@ -62,63 +196,84 @@ body {
 .botones {
   margin-top: 2rem;
   padding: 20px;
-  text-align: center; /* Centra los elementos dentro de .botones */
+  text-align: center;
+  /* Centra los elementos dentro de .botones */
 }
 
 /* Estilos para los botones */
 .text-center {
-  display: inline-block; /* Asegura que los elementos se comporten como bloques en línea */
-  margin: 0 auto; /* Centra horizontalmente los botones */
-  max-width: 150px; /* Ancho máximo de los botones */
-  margin-bottom: 2rem; /* Espacio inferior entre los botones */
+  display: inline-block;
+  /* Asegura que los elementos se comporten como bloques en línea */
+  margin: 0 auto;
+  /* Centra horizontalmente los botones */
+  max-width: 150px;
+  /* Ancho máximo de los botones */
+  margin-bottom: 2rem;
+  /* Espacio inferior entre los botones */
 }
 
 /* Estilos adicionales para achicar los botones */
 .text-center a {
   display: block;
-  margin: 0 auto; /* Centra horizontalmente los botones */
-  max-width: 150px; /* Ancho máximo de los botones */
+  margin: 0 auto;
+  /* Centra horizontalmente los botones */
+  max-width: 150px;
+  /* Ancho máximo de los botones */
 }
 
 /* Estilos para el texto de los botones */
 .text-lg {
-  font-size: 1.125rem; /* Tamaño de fuente ajustado para el texto de los botones */
-  font-weight: 500; /* Grosor de fuente para el texto de los botones */
-  text-align: center; /* Alineación del texto centrada */
-  color: #333; /* Color del texto de los botones */
+  font-size: 1.125rem;
+  /* Tamaño de fuente ajustado para el texto de los botones */
+  font-weight: 500;
+  /* Grosor de fuente para el texto de los botones */
+  text-align: center;
+  /* Alineación del texto centrada */
+  color: #333;
+  /* Color del texto de los botones */
 }
 
 /* Estilos para los íconos de los botones */
 .text-gray-700 {
-  color: #4a5568; /* Color del texto gris para los íconos de los botones */
-  font-size: 1.5rem; /* Tamaño de fuente para los íconos de los botones */
-  margin-top: 0.5rem; /* Espacio superior para los íconos de los botones */
+  color: #4a5568;
+  /* Color del texto gris para los íconos de los botones */
+  font-size: 1.5rem;
+  /* Tamaño de fuente para los íconos de los botones */
+  margin-top: 0.5rem;
+  /* Espacio superior para los íconos de los botones */
 }
 
 /* Estilos para el hover de opacidad */
 .hover\:opacity-75:hover {
-  opacity: 0.75; /* Cambio de opacidad al hacer hover */
+  opacity: 0.75;
+  /* Cambio de opacidad al hacer hover */
 }
 
 /* Estilos para la cuadrícula de los botones */
 .grid {
-  display: grid; /* Mostrar como una cuadrícula */
+  display: grid;
+  /* Mostrar como una cuadrícula */
 }
 
 /* Estilos para las columnas de la cuadrícula */
 .grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr)); /* Cuatro columnas igualmente espaciadas */
-  gap: 1rem; /* Espacio entre las columnas de la cuadrícula */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  /* Cuatro columnas igualmente espaciadas */
+  gap: 1rem;
+  /* Espacio entre las columnas de la cuadrícula */
 }
 
 /* Estilos para los botones en estado de hover */
 .hover\:opacity-75:hover {
-  opacity: 0.75; /* Cambio de opacidad al hacer hover */
+  opacity: 0.75;
+  /* Cambio de opacidad al hacer hover */
 }
 
 /* Estilos adicionales para los botones */
 .text-center a {
   display: block;
-  margin: 0 auto; /* Centra horizontalmente los botones */
-  max-width: 150px; /* Ancho máximo de los botones */
+  margin: 0 auto;
+  /* Centra horizontalmente los botones */
+  max-width: 150px;
+  /* Ancho máximo de los botones */
 }

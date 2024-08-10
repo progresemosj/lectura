@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juego de Contar</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <link rel="stylesheet" href="juego1.component.css"> <!-- Enlace al archivo CSS personalizado -->
-</head>
-
-<body>
-
+<div class="background"
+  style="background-image: url('assets/images/fondo6.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; min-height: 100vh;">
+  <!-- Contenedor principal -->
   <div class="mx-auto max-w-screen-lg px-4">
-    <!-- Contenedor principal -->
-    <div class="container px-8 py-8 md:flex md:items-center md:flex-col">
+
+    <div class="container px-8 py-8 md:flex md:flex-col md:items-center">
       <!-- Título de bienvenida -->
       <h1 class="text-3xl font-bold mb-4 md:text-center">
         ¡CONTEMOS JUNTOS!
@@ -24,25 +14,24 @@
         <img src="assets/images/contar.png" alt="Contemos" class="max-w-xs md:max-w-full">
       </div>
 
-      <!-- Descripción y botón -->
-      <div class="md:flex md:flex-col md:justify-center md:flex-1 md:text-center">
-        <!-- Descripción del juego -->
-        <p class="text-lg text-gray-600 mb-6">
+      <!-- Sección de descripción justo después de la imagen -->
+      <div class="description-box p-6 mb-6 w-full max-w-lg mx-auto">
+        <h2 class="text-2xl font-bold mb-4 text-center text-green-700">Descripción</h2>
+        <p class="text-lg text-gray-100 text-center">
           ¡Aprende a contar de manera divertida con nuestro juego interactivo! Este juego te ayudará a practicar tus
           habilidades de contar mientras te diviertes.
         </p>
+      </div>
 
-        <!-- Enlace "Ir al Juego" -->
-        <div>
-          <a href="https://arbolabcgames.top/M22BVF/"
-            class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-block mb-4 md:mb-0 md:mr-4">
-            JUGAR
-          </a>
-
-          <a routerLink="/juegom2" class="custom-button inline-block">
-            Siguiente
-          </a>
-        </div>
+      <!-- Botones -->
+      <div class="md:flex md:flex-col md:justify-center md:flex-1 md:text-center">
+        <a href="https://arbolabcgames.top/M22BVF/"
+          class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-block mb-4 md:mb-0 md:mr-4">
+          JUGAR
+        </a>
+        <a routerLink="/juegom2" class="custom-button inline-block">
+          Siguiente
+        </a>
       </div>
     </div>
 
@@ -56,7 +45,4 @@
       </div>
     </div>
   </div>
-
-</body>
-
-</html>
+</div>
