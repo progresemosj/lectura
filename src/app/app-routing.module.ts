@@ -88,30 +88,19 @@ import { CuentoDiecinueveInfoComponent } from './components/cuentos/cuento-dieci
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'canciones/1', component: CancionesComponent },
-  // {
-  { path: 'canciones/principal', component: PrincipalComponent },
-  { path: '1', component: CancionesComponent, data: { id: 1 } },
-  { path: '2', component: VacaLolaComponent, data: { id: 2 } },
-  { path: '3', component: PatitoJuanComponent, data: { id: 3 } },
-  { path: '4', component: LosPollitosComponent, data: { id: 4 } },
-  { path: '5', component: LobitosComponent, data: { id: 5 } },
-  { path: '6', component: BarquitoComponent, data: { id: 6 } },
-  { path: '7', component: ArrozComponent, data: { id: 7 } },
-  { path: '8', component: AranitaComponent, data: { id: 8 } },
-  { path: '9', component: BurritoComponent, data: { id: 9 } }
-
-    // path: 'canciones/principal', component: PrincipalComponent, children: [
-    //   { path: '1', component: CancionesComponent, data: { id: 1 } },
-    //   { path: '2', component: VacaLolaComponent, data: { id: 2 } },
-    //   { path: '3', component: PatitoJuanComponent, data: { id: 3 } },
-    //   { path: '4', component: LosPollitosComponent, data: { id: 4 } },
-    //   { path: '5', component: LobitosComponent, data: { id: 5 } },
-    //   { path: '6', component: BarquitoComponent, data: { id: 6 } },
-    //   { path: '7', component: ArrozComponent, data: { id: 7 } },
-    //   { path: '8', component: AranitaComponent, data: { id: 8 } },
-    //   { path: '9', component: BurritoComponent, data: { id: 9 } }
-    // ]
-  // },
+  {
+    path: 'canciones/principal', component: PrincipalComponent, children: [
+      { path: '1', component: CancionesComponent, data: { id: 1 } },
+      { path: '2', component: VacaLolaComponent, data: { id: 2 } },
+      { path: '3', component: PatitoJuanComponent, data: { id: 3 } },
+      { path: '4', component: LosPollitosComponent, data: { id: 4 } },
+      { path: '5', component: LobitosComponent, data: { id: 5 } },
+      { path: '6', component: BarquitoComponent, data: { id: 6 } },
+      { path: '7', component: ArrozComponent, data: { id: 7 } },
+      { path: '8', component: AranitaComponent, data: { id: 8 } },
+      { path: '9', component: BurritoComponent, data: { id: 9 } }
+    ]
+  },
   { path: 'cuentos', component: CuentosComponent },
   { path: 'cuentos/primerCuento', component: PrimerCuentoComponent },
   { path: 'cuentos/segundoCuento', component: CuentoDosInfoComponent },
