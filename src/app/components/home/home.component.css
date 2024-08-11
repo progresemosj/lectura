@@ -1,0 +1,10 @@
+.background {
+  background-size: cover;
+  /* Ajusta la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat;
+  /* Evita la repetición de la imagen de fondo */
+  background-position: center center;
+  /* Centra la imagen de fondo */
+  min-height: 100vh;
+  /* Asegura que el fondo cubra toda la altura de la página */
+}

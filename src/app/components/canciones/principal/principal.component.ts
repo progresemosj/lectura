@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class PrincipalComponent {
 
+
   ngOnInit(): void {
     this.cargarCanciones(this.canciones[0].id);
 

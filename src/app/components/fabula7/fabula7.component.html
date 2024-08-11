@@ -1,50 +1,53 @@
 <div class="relative">
-    <!-- contenedor de la imagen de fondo -->
-    <div class=" inset-0 bg-cover " style="background-image: url('assets/images/fondofabula.jpeg'); background-color: rgba(255, 255, 255, 0.9); z-index: -1;">
-      <p class="text-5xl font-semibold text-center"><br>El honrado leñador</p>
-      <div class="flex">
-        <div class="container">
-            <div class="container fabula">
-              <p class="texto">Érase una vez un leñador que a diario cortaba leña en el bosque para sostener a su familia.
-                Un atardecer, mientras cortaba un árbol en la orilla del río, el hacha resbaló de sus manos y cayó al agua. Desesperado, el leñador se sentó a llorar por su hacha perdida.
-                En ese instante, apareció una ninfa frente a él y le preguntó por qué lloraba. Cuando escuchó lo sucedido, sintió mucha lástima por el leñador.
-                —Espérame aquí buen hombre, creo que puedo ayudarte —dijo la ninfa.               
-                Entonces, se zambulló en el río y sacó del agua un hacha de oro, se la mostró al leñador y le preguntó:  
-                —¿Es esta tu hacha?
-                —No lo es —dijo el leñador.
-                Por segunda vez se sumergió la ninfa en el río, para reaparecer con un hacha de plata.
-                —¿Es esta tu hacha? —preguntó la ninfa.
-                —No lo es —dijo el leñador nuevamente.
-                Entonces, la ninfa entró por tercera vez en el agua trayendo el hacha perdida.
-                
-                —¿Es esta tu hacha?
-                —¡Oh, gracias! ¡Esa es mi hacha! —dijo el leñador llorando de alegría.
-                La ninfa estaba tan complacida con la honestidad del leñador que le regaló las hachas de oro y plata.
-              </p>
-              <p class="moraleja">Moraleja: Aquel que prefiere la honradez a la mentira, siempre será ganador.</p>
-            </div>
-          
+  <!-- contenedor de la imagen de fondo -->
+  <div class=" inset-0 bg-cover "
+    style="background-image: url('assets/images/fondofabula.jpeg'); background-color: rgba(255, 255, 255, 0.9); z-index: -1;">
+    <p class="text-5xl font-semibold text-gray-500 text-center"><br>El honrado leñador</p>
+    <div class="flex">
+      <div class="container">
+        <div class="container fabula">
+          <p class="texto">Érase una vez un leñador que a diario cortaba leña en el bosque para sostener a su familia.
+            Un atardecer, mientras cortaba un árbol en la orilla del río, el hacha resbaló de sus manos y cayó al agua.
+            Desesperado, el leñador se sentó a llorar por su hacha perdida.
+            En ese instante, apareció una ninfa frente a él y le preguntó por qué lloraba. Cuando escuchó lo sucedido,
+            sintió mucha lástima por el leñador.
+            —Espérame aquí buen hombre, creo que puedo ayudarte —dijo la ninfa.
+            Entonces, se zambulló en el río y sacó del agua un hacha de oro, se la mostró al leñador y le preguntó:
+            —¿Es esta tu hacha?
+            —No lo es —dijo el leñador.
+            Por segunda vez se sumergió la ninfa en el río, para reaparecer con un hacha de plata.
+            —¿Es esta tu hacha? —preguntó la ninfa.
+            —No lo es —dijo el leñador nuevamente.
+            Entonces, la ninfa entró por tercera vez en el agua trayendo el hacha perdida.
+
+            —¿Es esta tu hacha?
+            —¡Oh, gracias! ¡Esa es mi hacha! —dijo el leñador llorando de alegría.
+            La ninfa estaba tan complacida con la honestidad del leñador que le regaló las hachas de oro y plata.
+          </p>
+          <p class="moraleja">Moraleja: Aquel que prefiere la honradez a la mentira, siempre será ganador.</p>
         </div>
-  
-        <div class="w-1/2 p-4 pl-20 mt-28">
-           <div class="absolute">
-            <img src="assets/images/fabula7.jpg">
-            <a href="/fabulas">
-                <img src="assets/images/btnregresar.png" >
-            </a>
-          </div>
+
+      </div>
+
+      <div class="w-1/2 p-4 pl-20 mt-28">
+        <div class="absolute">
+          <img src="assets/images/fabula7.jpg">
+          <a href="/fabulas">
+            <img src="assets/images/btnregresar.png">
+          </a>
         </div>
       </div>
-      
-      <div class="botones">
-        <div  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
-          <div *ngFor="let item of items"  class="text-center   w-36 h-36  ml-4 mr-4">
-            <a  [routerLink]="item.link" class="block hover:opacity-75">
-              <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
-              <span  class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
-            </a>
-          </div>
+    </div>
+
+    <div class="botones">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
+        <div *ngFor="let item of items" class="text-center   w-36 h-36  ml-4 mr-4">
+          <a [routerLink]="item.link" class="block hover:opacity-75">
+            <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
+            <span class="mt-4 text-lg font-medium text-white block">{{item.text}}</span>
+          </a>
         </div>
       </div>
     </div>
   </div>
+</div>

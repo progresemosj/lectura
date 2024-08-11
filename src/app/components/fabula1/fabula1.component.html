@@ -1,41 +1,48 @@
 <div class="relative">
-    <!-- contenedor de la imagen de fondo -->
-    <div class=" inset-0 bg-cover " style="background-image: url('assets/images/fondofabula.jpeg'); background-color: rgba(255, 255, 255, 0.9); z-index: -1;">
-      <p class="text-5xl font-semibold text-center"><br>El león y el ratón</p>
-      <div class="flex">
-        <div class="container">
-            <div class="container fabula">
-              <p class="texto">En un día muy soleado, dormía plácidamente un león cuando un pequeño ratón pasó por su lado y lo despertó. 
-                Iracundo, el león tomó al ratón con sus enormes garras y cuando estaba a punto de aplastarlo, escuchó al ratoncito decirle:
-                <br>—Déjame ir, puede que algún día llegues a necesitarme.
-                <br>Fue tanta la risa que estas palabras le causaron, que el león decidió soltarlo. Al cabo de unas pocas horas, el león quedó atrapado en 
-                las redes de unos cazadores. El ratón, fiel a su promesa, acudió en su ayuda. Sin tiempo que perder, comenzó a morder la red hasta dejar al 
-                león en libertad. El león agradeció al ratón por haberlo salvado y desde ese día comprendió que todos los seres son importantes.
-              </p>
-              <p class="moraleja">Moraleja: No menosprecies a los demás, todos tenemos las cualidades que nos hacen muy especiales.</p>
-            </div>
-          
+  <!-- contenedor de la imagen de fondo -->
+  <div class=" inset-0 bg-cover "
+    style="background-image: url('assets/images/fondofabula.jpeg'); background-color: rgba(255, 255, 255, 0.9); z-index: -1;">
+    <p class="text-5xl font-semibold text-center text-gray-500"><br>El león y el ratón</p>
+    <div class="flex">
+      <div class="container">
+        <div class="container fabula">
+          <p class="texto">En un día muy soleado, dormía plácidamente un león cuando un pequeño ratón pasó por su lado y
+            lo despertó.
+            Iracundo, el león tomó al ratón con sus enormes garras y cuando estaba a punto de aplastarlo, escuchó al
+            ratoncito decirle:
+            <br>—Déjame ir, puede que algún día llegues a necesitarme.
+            <br>Fue tanta la risa que estas palabras le causaron, que el león decidió soltarlo. Al cabo de unas pocas
+            horas, el león quedó atrapado en
+            las redes de unos cazadores. El ratón, fiel a su promesa, acudió en su ayuda. Sin tiempo que perder, comenzó
+            a morder la red hasta dejar al
+            león en libertad. El león agradeció al ratón por haberlo salvado y desde ese día comprendió que todos los
+            seres son importantes.
+          </p>
+          <p class="moraleja">Moraleja: No menosprecies a los demás, todos tenemos las cualidades que nos hacen muy
+            especiales.</p>
         </div>
-  
-        <div class="w-1/2 p-4 pl-20 mt-28">
-           <div class="absolute">
-            <img src="assets/images/leonyraton.jpg">
-            <a href="/fabulas">
-              <img src="assets/images/btnregresar.png" >
+
+      </div>
+
+      <div class="w-1/2 p-4 pl-20 mt-28">
+        <div class="absolute">
+          <img src="assets/images/leonyraton.jpg">
+          <a href="/fabulas">
+            <img src="assets/images/btnregresar.png">
           </a>
-          </div>
         </div>
       </div>
-      
-      <div class="botones">
-        <div  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
-          <div *ngFor="let item of items"  class="text-center   w-36 h-36  ml-4 mr-4">
-            <a  [routerLink]="item.link" class="block hover:opacity-75">
-              <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
-              <span  class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
-            </a>
-          </div>
+    </div>
+
+    <div class="botones">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
+        <div *ngFor="let item of items" class="text-center   w-36 h-36  ml-4 mr-4">
+          <a [routerLink]="item.link" class="block hover:opacity-75">
+            <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
+            <span class="mt-4 text-lg font-medium text-white block">{{item.text}}</span>
+          </a>
         </div>
       </div>
     </div>
   </div>
+</div>

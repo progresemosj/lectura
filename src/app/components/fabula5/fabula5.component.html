@@ -1,40 +1,46 @@
 <div class="relative">
-    <!-- contenedor de la imagen de fondo -->
-    <div class=" inset-0 bg-cover " style="background-image: url('assets/images/fondofabula.jpeg'); background-color: rgba(255, 255, 255, 0.9); z-index: -1;">
-      <p class="text-5xl font-semibold text-center"><br>El lobo y la grulla</p>
-      <div class="flex">
-        <div class="container">
-            <div class="container fabula">
-              <p class="texto">Un día como cualquier otro, un joven y fornido lobo sintió cómo su garganta se atoraba con el pequeño hueso de una de sus presas. Viéndose en la más precaria situación, 
-                comenzó a aullar con lo poco que le quedaba de aliento: —¡Socorro, auxilio! Ayúdame y serás recompensado.
-                Los animales del bosque ignoraron las palabras del lobo ya que todos sabían que él no era de fiar. Sin embargo, una grulla incauta que caminaba por ahí escuchó sus lamentos y decidió 
-                ayudarlo. Con su largo y delgado pico, entró en la garganta del lobo y luego de haber extraído el hueso, exigió el pago prometido. Sin embargo, el lobo sonriendo y rechinando sus dientes, exclamó:
-                —¿Qué es lo que me pides? Te aseguro que ya tienes la recompensa que te mereces al haber metido tu cabeza en la boca de un lobo y haber seguido con vida.
-              </p>
-              <p class="moraleja">Moraleja: Cuando sirves a los malos de corazón, no esperes recompensa. Agradece si escapas las consecuencias de tus acciones.</p>
-            </div>
-          
+  <!-- contenedor de la imagen de fondo -->
+  <div class=" inset-0 bg-cover "
+    style="background-image: url('assets/images/fondofabula.jpeg'); background-color: rgba(255, 255, 255, 0.9); z-index: -1;">
+    <p class="text-5xl font-semibold text-gray-500 text-center"><br>El lobo y la grulla</p>
+    <div class="flex">
+      <div class="container">
+        <div class="container fabula">
+          <p class="texto">Un día como cualquier otro, un joven y fornido lobo sintió cómo su garganta se atoraba con el
+            pequeño hueso de una de sus presas. Viéndose en la más precaria situación,
+            comenzó a aullar con lo poco que le quedaba de aliento: —¡Socorro, auxilio! Ayúdame y serás recompensado.
+            Los animales del bosque ignoraron las palabras del lobo ya que todos sabían que él no era de fiar. Sin
+            embargo, una grulla incauta que caminaba por ahí escuchó sus lamentos y decidió
+            ayudarlo. Con su largo y delgado pico, entró en la garganta del lobo y luego de haber extraído el hueso,
+            exigió el pago prometido. Sin embargo, el lobo sonriendo y rechinando sus dientes, exclamó:
+            —¿Qué es lo que me pides? Te aseguro que ya tienes la recompensa que te mereces al haber metido tu cabeza en
+            la boca de un lobo y haber seguido con vida.
+          </p>
+          <p class="moraleja">Moraleja: Cuando sirves a los malos de corazón, no esperes recompensa. Agradece si escapas
+            las consecuencias de tus acciones.</p>
         </div>
-  
-        <div class="w-1/2 p-4 pl-20 mt-28">
-           <div class="absolute">
-            <img src="assets/images/fabula5.jpg">
-            <a href="/fabulas">
-                <img src="assets/images/btnregresar.png" >
-            </a>
-          </div>
+
+      </div>
+
+      <div class="w-1/2 p-4 pl-20 mt-28">
+        <div class="absolute">
+          <img src="assets/images/fabula5.jpg">
+          <a href="/fabulas">
+            <img src="assets/images/btnregresar.png">
+          </a>
         </div>
       </div>
-      
-      <div class="botones">
-        <div  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
-          <div *ngFor="let item of items"  class="text-center   w-36 h-36  ml-4 mr-4">
-            <a  [routerLink]="item.link" class="block hover:opacity-75">
-              <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
-              <span  class="mt-4 text-lg font-medium text-gray-700 block">{{item.text}}</span>
-            </a>
-          </div>
+    </div>
+
+    <div class="botones">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
+        <div *ngFor="let item of items" class="text-center   w-36 h-36  ml-4 mr-4">
+          <a [routerLink]="item.link" class="block hover:opacity-75">
+            <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
+            <span class="mt-4 text-lg font-medium text-white block">{{item.text}}</span>
+          </a>
         </div>
       </div>
     </div>
   </div>
+</div>
