@@ -1,0 +1,44 @@
+<div class="relative">
+  <!-- contenedor de la imagen de fondo -->
+  <div class=" inset-0 bg-cover "
+    style="background-image: url('assets/images/fondofabula.jpeg'); background-color: rgba(255, 255, 255, 0.9); z-index: -1;">
+    <p class="text-5xl font-semibold text-center"><br>El perro y su reflejo</p>
+    <div class="flex">
+      <div class="container">
+        <div class="container fabula">
+          <p class="texto">Un perro muy hambriento caminaba de aquí para allá buscando algo para comer, hasta que un
+            carnicero le tiró un hueso. Llevando el
+            hueso en el hocico, tuvo que cruzar un río. Al mirar su reflejo en el agua creyó ver a otro perro con un
+            hueso más grande que el suyo, así que
+            intentó arrebatárselo de un solo mordisco. Pero cuando abrió el hocico, el hueso que llevaba cayó al río y
+            se lo llevó la corriente. Muy triste
+            quedó aquel perro al darse cuenta de que había soltado algo que era real por perseguir lo que solo era un
+            reflejo.
+          </p>
+          <p class="moraleja">Moraleja: Valora lo que tienes y no lo pierdas por envidiar a los demás.</p>
+        </div>
+
+      </div>
+
+      <div class="w-1/2 p-4 pl-20 mt-17">
+        <div class="absolute">
+          <img src="assets/images/fabula9.jpg">
+          <a href="/fabulas">
+            <img src="assets/images/btnregresar.png">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="botones">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
+        <div *ngFor="let item of items" class="text-center   w-36 h-36  ml-4 mr-4">
+          <a [routerLink]="item.link" class="block hover:opacity-75">
+            <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
+            <span class="mt-4 text-lg font-medium text-white block">{{item.text}}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -85,6 +85,10 @@ import { CuentoCuatroInfoComponent } from './components/cuentos/cuento-cuatro-in
 import { CuentoCincoInfoComponent } from './components/cuentos/cuento-cinco-info/cuento-cinco-info.component';
 import { CuentoCatorceInfoComponent } from './components/cuentos/cuento-catorce-info/cuento-catorce-info.component';
 import { CuentoDiecinueveInfoComponent } from './components/cuentos/cuento-diecinueve-info/cuento-diecinueve-info.component';
+import { Fabula9Component } from './components/fabula9/fabula9.component';
+import { Fabula10Component } from './components/fabula10/fabula10.component';
+import { Fabula12Component } from './components/fabula12/fabula12.component';
+import { Fabula11Component } from './components/fabula11/fabula11.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'canciones/1', component: CancionesComponent },
@@ -132,6 +136,10 @@ const routes: Routes = [
   { path: 'fabula6', component: Fabula6Component },
   { path: 'fabula7', component: Fabula7Component },
   { path: 'fabula8', component: Fabula8Component },
+  { path: 'fabula9', component: Fabula9Component },
+  { path: 'fabula10', component: Fabula10Component },
+  { path: 'fabula11', component: Fabula11Component },
+  { path: 'fabula12', component: Fabula12Component },
   { path: 'juegos', component: JuegosComponent },
   { path: 'juego1', component: Juego1Component },
   { path: 'juegom2', component: Juegom2Component },

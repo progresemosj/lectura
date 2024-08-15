@@ -16,6 +16,10 @@ export class FabulasComponent {
     { image: 'assets/images/fabula_6.jpg', text: "La zorra y las uvas", link: '/fabula6' },
     { image: 'assets/images/fabula_7.jpg', text: "El leñador honrado", link: '/fabula7' },
     { image: 'assets/images/fabula_8.png', text: "El zorro y el armiño", link: '/fabula8' },
+    { image: 'assets/images/fabula_9.jpg', text: "El perro y su reflejo", link: '/fabula9' },
+    { image: 'assets/images/fabula_10.jpg', text: "La lechera y su cantaro", link: '/fabula10' },
+    { image: 'assets/images/fabula_11.jpg', text: "El aguila y los gallos", link: '/fabula11' },
+    { image: 'assets/images/fabula_12.jpg', text: "El gallo y la joya", link: '/fabula12' },
   ];
 
   // Guarda una copia original de los elementos

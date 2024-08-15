@@ -1,0 +1,46 @@
+<div class="relative">
+  <!-- contenedor de la imagen de fondo -->
+  <div class=" inset-0 bg-cover "
+    style="background-image: url('assets/images/fondofabula.jpeg'); background-color: rgba(255, 255, 255, 0.9); z-index: -1;">
+    <p class="text-5xl font-semibold text-center"><br>La lechera y su cantaro</p>
+    <div class="flex">
+      <div class="container">
+        <div class="container fabula">
+          <p class="texto">Había una vez una joven lechera que caminaba con un cántaro de leche para vender en el
+            mercado del pueblo. Mientras caminaba pensaba
+            en todas las cosas que haría con el dinero de la venta: —Cuando me paguen —se dijo—, compraré de inmediato
+            unas gallinas, estas gallinas pondrán
+            muchísimos huevos y los venderé en el mercado. Con el dinero de los huevos me compraré un vestido y zapatos
+            muy elegantes. Luego, iré a la feria y
+            como luciré tan hermosa, todos los chicos querrán acercarse a hablar conmigo. Por andar distraída con sus
+            pensamientos, la lechera tropezó con una
+            piedra y el cántaro se rompió derramando toda la leche. Con el cántaro destrozado se fueron las gallinas y
+            los huevos; también el vestido y los zapatos.
+          </p>
+          <p class="moraleja">Moraleja: Nuestros sueños y planes no deben apartarnos de la realidad.</p>
+        </div>
+
+      </div>
+
+      <div class="w-1/2 p-4 pl-20 mt-28">
+        <div class="absolute">
+          <img src="assets/images/fabula10.jpg">
+          <a href="/fabulas">
+            <img src="assets/images/btnregresar.png">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="botones">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
+        <div *ngFor="let item of items" class="text-center   w-36 h-36  ml-4 mr-4">
+          <a [routerLink]="item.link" class="block hover:opacity-75">
+            <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
+            <span class="mt-4 text-lg font-medium text-white block">{{item.text}}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

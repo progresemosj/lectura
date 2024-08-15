@@ -76,6 +76,10 @@ import { Juegomu281Component } from './components/juegomu281/juegomu281.componen
 import { Juegoa161Component } from './components/juegoa161/juegoa161.component';
 import { Juegoco241Component } from './components/juegoco241/juegoco241.component';
 import { Juegor201Component } from './components/juegor201/juegor201.component';
+import { Fabula11Component } from './components/fabula11/fabula11.component';
+import { Fabula9Component } from './components/fabula9/fabula9.component';
+import { Fabula10Component } from './components/fabula10/fabula10.component';
+import { Fabula12Component } from './components/fabula12/fabula12.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -93,6 +97,11 @@ import { Juegor201Component } from './components/juegor201/juegor201.component';
     Fabula6Component,
     Fabula7Component,
     Fabula8Component,
+    Fabula9Component,
+    Fabula10Component,
+    Fabula11Component,
+    Fabula12Component,
+
     JuegosComponent,
     CarouselComponent,
 

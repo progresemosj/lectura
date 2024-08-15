@@ -1,0 +1,45 @@
+<div class="relative">
+  <!-- contenedor de la imagen de fondo -->
+  <div class=" inset-0 bg-cover "
+    style="background-image: url('assets/images/fondofabula.jpeg'); background-color: rgba(255, 255, 255, 0.9); z-index: -1;">
+    <p class="text-5xl font-semibold text-center"><br>El gallo y la joya</p>
+    <div class="flex">
+      <div class="container">
+        <div class="container fabula">
+          <p class="texto">En la granja, un gallo muy hambriento escarbaba la tierra buscando algo de comer para él y
+            las gallinas con las que compartía su
+            gallinero, cuando descubrió un diamante que la esposa del granjero había perdido.
+
+            —¡Qué desilusión! —dijo el gallo—. Sin duda eres una prenda muy costosa y quien te perdió daría mucho por
+            encontrarte. Pero yo prefiero un solo
+            grano de maíz o de trigo antes que todas las joyas del mundo.
+          </p>
+          <p class="moraleja">Moraleja: Aquello que no es útil no tiene valor.</p>
+        </div>
+
+      </div>
+
+      <div class="w-1/2 p-4 pl-20 ">
+        <div class="absolute">
+          <img src="assets/images/fabula12.jpg">
+          <div class="-mt-28">
+            <a href="/fabulas">
+              <img src="assets/images/btnregresar.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="botones">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-36">
+        <div *ngFor="let item of items" class="text-center   w-36 h-36  ml-4 mr-4">
+          <a [routerLink]="item.link" class="block hover:opacity-75">
+            <img [src]="item.image" alt="image" class="max-w-xs w-24 h-24 md:w-32 md:h-32 mx-auto">
+            <span class="mt-4 text-lg font-medium text-white block">{{item.text}}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

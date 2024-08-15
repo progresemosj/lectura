@@ -1,11 +1,11 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-fabula6',
-  templateUrl: './fabula6.component.html',
-  styleUrls: ['./fabula6.component.css']
+  selector: 'app-fabula11',
+  templateUrl: './fabula11.component.html',
+  styleUrls: ['./fabula11.component.css']
 })
-export class Fabula6Component {
+export class Fabula11Component {
   ngOnInit(): void {
     window.scroll(0, 0);
   }
